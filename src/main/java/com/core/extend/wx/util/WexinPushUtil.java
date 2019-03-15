@@ -21,7 +21,7 @@ public class WexinPushUtil {
 	 * @param docSubject
 	 * @param tempUrl
 	 */
-	public static void sendTemplate(String openId, Map<String, WeixinTemplateData> data, String tempUrl, String templateId) {
+	public static void sendTemplate(String []openId, Map<String, WeixinTemplateData> data, String tempUrl, String templateId) {
 		AccessToken accessToken = WeixinUtil.getAccessToken(WeiXinWorkConstant.APPID, WeiXinWorkConstant.SECRET, null);
 		String url = WeiXinWorkConstant.CODE_TO_SEND_TEMPLATE.replace("ACCESS_TOKEN", accessToken.getToken());
 		WeixinTemplateInfo template = new WeixinTemplateInfo();
@@ -38,7 +38,7 @@ public class WexinPushUtil {
 	 * @param docSubject
 	 * @param tempUrl
 	 */
-	public static void sendTemplateByIp(String openId, String docSubject, String tempUrl, String templateId) {
+	public static void sendTemplateByIp(String []openId, String docSubject, String tempUrl, String templateId) {
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy年MM月dd日 HH:mm");
 		AccessToken accessToken = WeixinUtil.getAccessToken(WeiXinWorkConstant.APPID, WeiXinWorkConstant.SECRET, null);
 		String url = WeiXinWorkConstant.CODE_TO_SEND_TEMPLATE.replace("ACCESS_TOKEN", accessToken.getToken());

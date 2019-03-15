@@ -78,7 +78,7 @@ public class CreateBean {
 		List<String> list = new ArrayList<>();
 		while (rs.next()) {
 			String tableName = rs.getString(1);
-			list.add(getTablesNameToClassName(tableName));
+			list.add(tableName);
 		}
 		rs.close();
 		ps.close();
@@ -169,7 +169,7 @@ public class CreateBean {
 	}
 
 	private String formatTableName(String name) {
-		String[] split = name.split("_");
+		String[] split = name.toLowerCase().split("_");
 		if (split.length > 1) {
 			StringBuffer sb = new StringBuffer();
 			for (int i = 0; i < split.length ; i++) {

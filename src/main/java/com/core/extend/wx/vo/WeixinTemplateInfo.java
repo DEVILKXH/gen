@@ -4,15 +4,15 @@ import java.util.Map;
 
 public class WeixinTemplateInfo {
 
-	private String touser;
+	private String []touser;
 	private String template_id;
 	private String url;
 	private Miniprogram miniprogram;
 	private Map<String, WeixinTemplateData> data;
-	public String getTouser() {
+	public String []getTouser() {
 		return touser;
 	}
-	public void setTouser(String touser) {
+	public void setTouser(String []touser) {
 		this.touser = touser;
 	}
 	public String getTemplate_id() {

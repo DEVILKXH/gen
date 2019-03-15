@@ -2,9 +2,9 @@ package com.core.extend.wx.constant;
 
 public class WeiXinWorkConstant {
 
-	public final static String APPID = "wx3a16bc62781e0418";
+	public final static String APPID = "";
 	
-	public final static String SECRET = "627c6cb1cfffedb98e1b28587c0e055a";
+	public final static String SECRET = "";
 
 	public final static String TEMPLATE_TO_MANAGER = "9RStbULyIVUItNN5UpDh9aPhV3ftW6rlW8EXJbFLlqU";
 
